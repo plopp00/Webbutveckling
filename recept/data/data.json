@@ -1,0 +1,61 @@
+{
+  "1": {
+    "ingredienser": [
+      "100g smör",
+      "2½dl strösocker",
+      "2 ägg",
+      "1dl vetemjöl",
+      "3msk kakao",
+      "1tsk vaniljsocker"
+    ],
+    "namn": "kladdkaka",
+    "beskrivning": "baconipsum.com",
+    "bild": "https://res.cloudinary.com/coopsverige/image/upload/w_400,h_400/v1432634217/30651.jpg",
+    "page": "kladdkaka.html"
+  },
+
+  "2": {
+    "ingredienser": [
+      "3 ägg",
+      "1½ dl strösocker",
+      "½ dl mjölk",
+      "2 dl vetemjöl",
+      "1 tsk bakpulver"
+    ],
+    "namn": "Rulltårta",
+    "beskrivning": "baconipsum.com",
+    "bild": "https://mittkok.expressen.se/wp-content/uploads/2015/07/rullt%C3%A5rta-bas-700x700.jpg",
+    "page": "rulltårta.html"
+  },
+
+  "3": {
+    "ingredienser": [
+      "50g smör",
+      "3 ägg",
+      "2 dl strösocker",
+      "1 dl mjölk",
+      "4 dl vetemjöl",
+      "2 tsk bakpulver"
+    ],
+    "namn": "Muffins",
+    "beskrivning": "baconipsum.com",
+    "bild": "https://static01.nyt.com/images/2016/10/13/dining/13COOKING-PUMPKIN-MAPLE-MUFFINS2/13COOKING-PUMPKIN-MAPLE-MUFFINS2-videoSixteenByNineJumbo1600.jpg",
+    "page": "muffins.html"
+  },
+
+  "4": {
+    "ingredienser": [
+      "150g smör",
+      "1½ dl strösocker",
+      "½ dl mjölk",
+      "3 msk kakao",
+      "2 tsk vaniljsocker",
+      "4dl havregryn",
+      "2 msk vatten"
+    ],
+    "namn": "Chokladbollar",
+    "beskrivning": "baconipsum.com",
+    "bild": "https://mittkok.expressen.se/wp-content/uploads/2014/04/fotolia_120185863_subscription_monthly_m-700x700.jpg",
+    "page": "chokladbollar.html"
+  }
+}

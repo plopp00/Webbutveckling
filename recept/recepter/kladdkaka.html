@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kladdkaka</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+    <link rel="stylesheet" type="text/css" href="StarRating.css">
+
+    <style>
+        body, html {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        main {
+            width: 80%;
+            height: auto;
+            min-height: 400px;
+
+
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        main .ingredienser {
+            width: 30%;
+            min-height: 300px;
+            height: auto;
+            font-family: Arial,serif;
+            border-bottom: 1px solid #ccc;
+        }
+        .h2{
+            text-align: center;
+        }
+
+        main .beskrivning {
+            width: 70%;
+            height: 100%;
+            font-family: Arial,serif;
+            min-height: 300px;
+            border-bottom: 1px solid #ccc;
+            border-left: 1px solid #ccc;
+
+
+        }
+
+        header {
+            width: 80%;
+            height: 400px;
+            margin: 20px 0 20px 0;
+
+            overflow: hidden;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+
+            position: relative;
+        }
+
+        header img {
+            width: 100%;
+        }
+
+        header .info {
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            bottom: 0;
+            left: 0;
+            padding: 0 20px;
+            background-color: #f2f2f2;
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            font-family: Montserrat,serif;
+            font-size: 18px;
+        }
+
+        header .info .rating {
+            font-size: 12px;
+            color: #ccc;
+            margin: 10px 0 0 0;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header .info .rating .time {
+            color: black;
+            font-family: Montserrat,serif;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 14px;
+            margin: 0 20px;
+        }
+
+        header .info .rating .time i {
+            margin: 0 10px;
+        }
+
+        header .buy {
+            position: absolute;
+            top: 50%;
+            right: 50px;
+
+            padding: 30px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+
+            -webkit-transform: translate(0, -50%);
+            -moz-transform: translate(0, -50%);
+            -ms-transform: translate(0, -50%);
+            -o-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+
+            height: 60%;
+            border: none;
+            background-color: green;
+
+            font-family: Montserrat,serif;
+            color: #fff;
+            font-size: 15px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://res.cloudinary.com/coopsverige/image/upload/w_400,h_400/v1432634217/30651.jpg">
+    <div class="info">
+        <div class="title">
+            Kladdkaka
+            <div class="rating">
+                <x-star-rating value="3" number="5"></x-star-rating>
+                <script src="StarRating.js"></script>
+
+
+
+                <div class="time">
+                    <i class="material-icons">
+                        alarm
+                    </i> 60 min
+                </div>
+            </div>
+        </div>
+
+        <button class="buy">
+            Lägg till inköpslistan
+        </button>
+    </div>
+</header>
+
+<main>
+    <div class="ingredienser">
+        <h2 class="h2">Ingredienser</h2>
+        <ul>
+            <li>100g smör</li>
+            <li>2½dl strösocker</li>
+            <li>2 ägg</li>
+            <li>3msk kakao</li>
+            <li>1tsk vaniljsocker</li>
+            <li>1dl vetemjöl</li>
+        </ul>
+
+    </div>
+    <div class="beskrivning">
+        <h2 class="h2"> Gör så här</h2>
+        <ol>
+            <li>Sätt ugnen på 175°.</li>
+            <li>Smält smöret i en kastrull. Lyft av kastrullen från plattan.</li>
+            <li>Rör ner socker och ägg, blanda väl. Rör ner övriga ingredienser så att allt blir väl blandat.</li>
+            <li>Häll smeten i en smord och bröad form med löstagbar kant, ca 24 cm i diameter.</li>
+            <li>Grädda mitt i ugnen ca 15 min. Kakan blir låg med ganska hård yta och lite kladdig i mitten.</li>
+            <li>Låt kakan kallna. Pudra över florsocker. Servera med grädde eller glass och frukt.</li>
+
+        </ol>
+
+    </div>
+
+</main>
+
+
+</body>
+</html>

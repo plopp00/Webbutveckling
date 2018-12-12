@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rulltårta</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+    <link rel="stylesheet" type="text/css" href="StarRating.css">
+
+    <style>
+        body, html {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        main {
+            width: 80%;
+            height: auto;
+            min-height: 400px;
+
+
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        main .ingredienser {
+            width: 30%;
+            min-height: 300px;
+            height: auto;
+            font-family: Arial,serif;
+
+            border-bottom: 1px solid #ccc;
+        }
+        .h2{
+            text-align: center;
+        }
+
+        main .beskrivning {
+            width: 70%;
+            height: 100%;
+            font-family: Arial,serif;
+            min-height: 300px;
+            border-bottom: 1px solid #ccc;
+            border-left: 1px solid #ccc;
+
+
+        }
+
+        header {
+            width: 80%;
+            height: 400px;
+            margin: 20px 0 20px 0;
+
+            overflow: hidden;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+
+            position: relative;
+        }
+
+        header img {
+            width: 100%;
+        }
+
+        header .info {
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            bottom: 0;
+            left: 0;
+            padding: 0 20px;
+            background-color: #f2f2f2;
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            font-family: Montserrat,serif;
+            font-size: 18px;
+        }
+
+        header .info .rating {
+            font-size: 12px;
+            color: #ccc;
+            margin: 10px 0 0 0;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header .info .rating .time {
+            color: black;
+            font-family: Montserrat,serif;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 14px;
+            margin: 0 20px;
+        }
+
+        header .info .rating .time i {
+            margin: 0 10px;
+        }
+
+        header .buy {
+            position: absolute;
+            top: 50%;
+            right: 50px;
+
+            padding: 30px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+
+            -webkit-transform: translate(0, -50%);
+            -moz-transform: translate(0, -50%);
+            -ms-transform: translate(0, -50%);
+            -o-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+
+            height: 60%;
+            border: none;
+            background-color: green;
+
+            font-family: Montserrat,serif;
+            color: #fff;
+            font-size: 15px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://mittkok.expressen.se/wp-content/uploads/2015/07/rullt%C3%A5rta-bas-700x700.jpg">
+    <div class="info">
+        <div class="title">
+            Rulltårta
+            <div class="rating">
+                <x-star-rating value="3" number="5"></x-star-rating>
+                <script src="StarRating.js"></script>
+
+
+
+                <div class="time">
+                    <i class="material-icons">
+                        alarm
+                    </i> 60 min
+                </div>
+            </div>
+        </div>
+
+        <button class="buy">
+            Lägg till inköpslistan
+        </button>
+    </div>
+</header>
+
+<main>
+    <div class="ingredienser">
+        <h2 class="h2">Ingredienser</h2>
+        <ul>
+
+            <li>1½dl strösocker</li>
+            <li>3 ägg</li>
+            <li>½dl mjölk</li>
+            <li>1tsk bakpulver</li>
+            <li>2dl vetemjöl</li>
+        </ul>
+
+    </div>
+    <div class="beskrivning">
+        <h2 class="h2"> Gör så här</h2>
+        <ol>
+            <li>Sätt ugnen på 250˚C.</li>
+            <li>Lägg ett bakplåtspapper i en långpanna 30x40 cm (för 20 bitar). Smörj det med lite matfett.</li>
+            <li>Vispa ägg och socker pösigt. Blanda mjöl och bakpulver. Vänd ner det i äggsmeten. Rör ner vätskan.</li>
+            <li>Bred ut smeten jämnt i långpannan. Grädda mitt i ugnen ca 5 minuter</li>
+            <li>Strö lite strösocker jämnt över kakan. Stjälp upp den på ett bakplåtspapper på galler. Dra försiktigt bort papperet som kakan gräddats på.</li>
+            <li>Fyllning: Bred sylten i ett jämnt lager över den varma kakan. Rulla ihop från långsidan med hjälp av papperet. Låt rulltårtan svalna i papperet med skarven ner</li>
+
+        </ol>
+
+    </div>
+
+</main>
+
+
+</body>
+</html>

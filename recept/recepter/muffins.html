@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Muffins</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+    <link rel="stylesheet" type="text/css" href="StarRating.css">
+
+    <style>
+        body, html {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        main {
+            width: 80%;
+            height: auto;
+            min-height: 400px;
+
+
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        main .ingredienser {
+            width: 30%;
+            min-height: 300px;
+            height: auto;
+            font-family: Arial,serif;
+            border-bottom: 1px solid #ccc;
+        }
+        .h2{
+            text-align: center;
+        }
+
+        main .beskrivning {
+            width: 70%;
+            height: 100%;
+            font-family: Arial,serif;
+            min-height: 300px;
+            border-bottom: 1px solid #ccc;
+            border-left: 1px solid #ccc;
+
+
+        }
+
+        header {
+            width: 80%;
+            height: 400px;
+            margin: 20px 0 20px 0;
+
+            overflow: hidden;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+
+            position: relative;
+        }
+
+        header img {
+            width: 100%;
+        }
+
+        header .info {
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            bottom: 0;
+            left: 0;
+            padding: 0 20px;
+            background-color: #f2f2f2;
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            font-family: Montserrat,serif;
+            font-size: 18px;
+        }
+
+        header .info .rating {
+            font-size: 12px;
+            color: #ccc;
+            margin: 10px 0 0 0;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header .info .rating .time {
+            color: black;
+            font-family: Montserrat,serif;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 14px;
+            margin: 0 20px;
+        }
+
+        header .info .rating .time i {
+            margin: 0 10px;
+        }
+
+        header .buy {
+            position: absolute;
+            top: 50%;
+            right: 50px;
+
+            padding: 30px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+
+            -webkit-transform: translate(0, -50%);
+            -moz-transform: translate(0, -50%);
+            -ms-transform: translate(0, -50%);
+            -o-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+
+            height: 60%;
+            border: none;
+            background-color: green;
+
+            font-family: Montserrat,serif;
+            color: #fff;
+            font-size: 15px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://static01.nyt.com/images/2016/10/13/dining/13COOKING-PUMPKIN-MAPLE-MUFFINS2/13COOKING-PUMPKIN-MAPLE-MUFFINS2-videoSixteenByNineJumbo1600.jpg">
+    <div class="info">
+        <div class="title">
+            Muffins
+            <div class="rating">
+                <x-star-rating value="3" number="5"></x-star-rating>
+                <script src="StarRating.js"></script>
+
+
+
+                <div class="time">
+                    <i class="material-icons">
+                        alarm
+                    </i> 60 min
+                </div>
+            </div>
+        </div>
+
+        <button class="buy">
+            Lägg till inköpslistan
+        </button>
+    </div>
+</header>
+
+<main>
+    <div class="ingredienser">
+        <h2 class="h2">Ingredienser</h2>
+        <ul>
+            <li>50g smör</li>
+            <li>2dl strösocker</li>
+            <li>3 ägg</li>
+            <li>1dl mjölk</li>
+            <li>2tsk bakpulver</li>
+            <li>4dl vetemjöl</li>
+        </ul>
+
+    </div>
+    <div class="beskrivning">
+        <h2 class="h2"> Gör så här</h2>
+        <ol>
+            <li>Sätt ugnen på 225°.</li>
+            <li>Sätt ut pappersformar på en plåt eller smörj en muffinsplåt lätt.</li>
+            <li>Smält smöret.</li>
+            <li>Vispa ägg och socker pösigt. Tillsätt mjölk och smör.</li>
+            <li>Blanda mjöl och bakpulver och rör ner det i smeten.</li>
+            <li>Klicka ut smeten i formarna.</li>
+            <li>Grädda mitt i ugnen ca 20 min för stora och ca 12 min för normalstora.</li>
+            <li>åt muffinsen svalna. Sikta över lite florsocker strax före servering eller vispa grädde och klicka på. </li>
+
+        </ol>
+
+    </div>
+
+</main>
+
+
+</body>
+</html>
